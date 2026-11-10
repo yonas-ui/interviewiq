@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    border: 1px solid rgb(51 65 85);
+    border-radius: 0.75rem;
+    background-color: rgb(15 23 42);
+    padding: 1.25rem;
+  }
+
+  .btn {
+    border-radius: 0.5rem;
+    background-color: rgb(99 102 241);
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgb(255 255 255);
+    transition: background-color 0.2s ease;
+  }
+
+  .btn:hover {
+    background-color: rgb(129 140 248);
+  }
+
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .btn-ghost {
+    border: 1px solid rgb(51 65 85);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    color: rgb(226 232 240);
+    transition: background-color 0.2s ease;
+  }
+
+  .btn-ghost:hover {
+    background-color: rgb(30 41 59);
+  }
+
+  .btn-ghost:disabled {
+    opacity: 0.5;
+  }
+
+  .input {
+    width: 100%;
+    border: 1px solid rgb(51 65 85);
+    border-radius: 0.5rem;
+    background-color: rgb(2 6 23);
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+
+  .input:focus {
+    border-color: rgb(129 140 248);
+  }
+
+  .label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgb(148 163 184);
+  }
+}
